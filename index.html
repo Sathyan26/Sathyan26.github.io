@@ -530,6 +530,12 @@
           <h3>Ghost-it &mdash; RAG-Based AI Writing Assistant for Novelists</h3>
           <p>A full-stack writing assistant for novelists &mdash; a FastAPI backend, SQLite + ChromaDB vector storage, and a React + TypeScript dashboard, unifying style analysis, grammar correction, story-bible extraction, and continuity checking behind one API. An automated style-analysis pipeline computes sentence-length, punctuation, and vocabulary statistics, then uses the Claude API to synthesize a natural-language "style card" describing an author's voice &mdash; version-tracked over time to surface stylistic drift across a manuscript.</p>
           <p>A self-hosted <b>LanguageTool</b> grammar engine is combined with a separate Claude pass constrained by the author's own style profile, producing Grammarly-style corrections that flag real issues without flattening intentional voice. An LLM-driven <b>story-bible extraction</b> pipeline tracks characters, locations, timeline events, and facts with name-based entity resolution across chapters &mdash; merging into existing entries instead of duplicating them &mdash; and flags continuity contradictions as a reviewable queue. A RAG retrieval layer (Voyage AI embeddings + ChromaDB) assembles the style profile, story bible, and continuity flags into one context packet, exportable as a native <code>.docx</code>. All LLM calls are strictly on-demand and batched, with cheaper models routed to high-frequency tasks to keep API cost predictable.</p>
+          <div class="proj-links">
+            <a class="btn ghost" href="https://github.com/Sathyan26/ghost-it" target="_blank" rel="noopener">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.33 2.74-1.05 2.74-1.05.56 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.03 10.03 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+              View source
+            </a>
+          </div>
         </div>
         <div class="metric-row">
           <div class="metric"><div class="num tabular">100%</div><div class="lbl">Hit@4 (Voyage embeddings)</div></div>
