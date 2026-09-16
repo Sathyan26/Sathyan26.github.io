@@ -286,6 +286,43 @@
   .edu-card .when{font-family:"IBM Plex Mono",monospace; font-size:0.8rem; color:var(--accent); white-space:nowrap;}
   .coursework{margin-top:1.2rem; display:flex; flex-wrap:wrap; gap:0.4rem;}
 
+  /* ---------- about me ---------- */
+  .aboutme-grid{display:grid; grid-template-columns:auto 1fr; gap:1.6rem; align-items:start;}
+  @media (max-width:600px){.aboutme-grid{grid-template-columns:1fr;}}
+  .aboutme-icon{
+    width:56px; height:56px; border-radius:14px; flex:none;
+    background:var(--surface); border:1px solid var(--line);
+    display:flex; align-items:center; justify-content:center; color:var(--accent);
+  }
+  .aboutme-grid p{color:var(--ink-soft); max-width:64ch;}
+  .aboutme-grid p + p{margin-top:1rem;}
+  .aboutme-quote{
+    font-family:"Fraunces", Georgia, serif; font-style:italic; font-weight:500;
+    color:var(--ink) !important; font-size:1.2rem; line-height:1.5; max-width:38ch !important;
+    margin-top:1.4rem !important;
+  }
+  .aboutme-quote em{color:var(--accent); font-style:italic;}
+
+  .bookshelf{margin-top:1.8rem;}
+  .bookshelf-label{
+    font-family:"IBM Plex Mono",monospace; font-size:0.72rem; text-transform:uppercase;
+    letter-spacing:0.1em; color:var(--ink-faint); margin-bottom:0.9rem;
+  }
+  .book-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:0.9rem;}
+  .book-tile{
+    background:var(--surface); border:1px solid var(--line); border-radius:10px;
+    padding:1.1rem 1rem 0.95rem; position:relative; overflow:hidden;
+    transition:transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .book-tile::before{content:""; position:absolute; top:0; left:0; right:0; height:4px; background:var(--spine, var(--accent));}
+  .book-tile:hover{transform:translateY(-3px); box-shadow:0 10px 24px var(--shadow);}
+  .book-tile .title{font-family:"Fraunces", Georgia, serif; font-style:italic; font-weight:500; font-size:1.02rem; line-height:1.32; color:var(--ink);}
+  .book-tile .genre{font-family:"IBM Plex Mono",monospace; font-size:0.66rem; text-transform:uppercase; letter-spacing:0.07em; color:var(--ink-faint); margin-top:0.7rem;}
+  .book-tile:nth-child(4n+1){--spine:var(--accent);}
+  .book-tile:nth-child(4n+2){--spine:var(--accent-2);}
+  .book-tile:nth-child(4n+3){--spine:color-mix(in srgb, var(--accent) 55%, var(--accent-2));}
+  .book-tile:nth-child(4n+4){--spine:color-mix(in srgb, var(--accent-2) 45%, var(--ink-soft));}
+
   /* ---------- contact / footer ---------- */
   .contact-band{
     background:var(--code-bg); color:var(--code-ink); border-radius:16px;
@@ -312,6 +349,7 @@
   <div class="wrap">
     <a class="brand" href="#top">sathyan<span class="dot">.</span>geethpriya</a>
     <div class="navlinks">
+      <a href="#about-me">about me</a>
       <a href="#terminal">terminal</a>
       <a href="#about">summary</a>
       <a href="#skills">skills</a>
@@ -341,9 +379,36 @@
     </div>
   </section>
 
+  <section id="about-me">
+    <div class="wrap">
+      <div class="eyebrow"><span class="num">01</span> About me</div>
+      <div class="aboutme-grid">
+        <div class="aboutme-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5.5C4 4.67 4.67 4 5.5 4H12v16H5.5A1.5 1.5 0 0 1 4 18.5v-13z"/><path d="M20 5.5c0-.83-.67-1.5-1.5-1.5H12v16h6.5a1.5 1.5 0 0 0 1.5-1.5v-13z"/></svg>
+        </div>
+        <div>
+          <p>I'm an enthusiastic and goal-driven Computer Science graduate who genuinely enjoys solving problems, learning new things, and taking on challenges. I work well in team environments and believe that collaboration, curiosity, and a willingness to learn are what make a strong team even stronger.</p>
+          <p>Outside of technology, I enjoy spending time at my local library reading novels. I've always believed that every book has something new to teach us, whether it's a different perspective, an interesting idea, or simply a new way of looking at the world.</p>
+          <div class="bookshelf">
+            <div class="bookshelf-label">A few books I've read</div>
+            <div class="book-grid">
+              <div class="book-tile"><div class="title">The Witcher series</div><div class="genre">Fantasy</div></div>
+              <div class="book-tile"><div class="title">Harry Potter series</div><div class="genre">Fantasy</div></div>
+              <div class="book-tile"><div class="title">The Expanse series</div><div class="genre">Science Fiction</div></div>
+              <div class="book-tile"><div class="title">All the Light We Cannot See</div><div class="genre">Historical Fiction</div></div>
+              <div class="book-tile"><div class="title">The Catcher in the Rye</div><div class="genre">Coming-of-Age</div></div>
+              <div class="book-tile"><div class="title">Epic of Gilgamesh</div><div class="genre">Ancient Epic</div></div>
+            </div>
+          </div>
+          <p class="aboutme-quote">For me, learning doesn't stop when school does &mdash; <em>continuing to learn and challenge myself every day is one of the best ways to stay prepared in an unpredictable and constantly changing world.</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="terminal">
     <div class="wrap">
-      <div class="eyebrow"><span class="num">01</span> Try the terminal</div>
+      <div class="eyebrow"><span class="num">02</span> Try the terminal</div>
       <div class="terminal">
         <div class="terminal-bar">
           <div class="lights"><span></span><span></span><span></span></div>
@@ -371,7 +436,7 @@
 
   <section id="about">
     <div class="wrap">
-      <div class="eyebrow"><span class="num">02</span> Summary</div>
+      <div class="eyebrow"><span class="num">03</span> Summary</div>
       <div class="about-grid">
         <div>
           <p>I work across the full SDLC &mdash; from data structures and database design to debugging production issues, building and load-bearing REST/GraphQL APIs, and automating data-cleaning pipelines end to end. Most recently that's meant retrieval-augmented generation: chunking, embeddings, vector search, and evaluating whether a RAG system actually retrieves the right thing.</p>
@@ -397,7 +462,7 @@
 
   <section id="skills">
     <div class="wrap">
-      <div class="eyebrow"><span class="num">03</span> Technical skills</div>
+      <div class="eyebrow"><span class="num">04</span> Technical skills</div>
       <div class="skill-groups">
         <div class="skill-card">
           <div class="head">
@@ -471,7 +536,7 @@
 
   <section id="experience">
     <div class="wrap">
-      <div class="eyebrow"><span class="num">04</span> Experience</div>
+      <div class="eyebrow"><span class="num">05</span> Experience</div>
       <div class="timeline">
         <div class="tl-item">
           <div class="tl-head"><h3>Data Science Program &mdash; Student</h3><span class="when mono">Jun 2025 &ndash; Present</span></div>
@@ -499,7 +564,7 @@
 
   <section id="projects">
     <div class="wrap">
-      <div class="eyebrow"><span class="num">05</span> Projects</div>
+      <div class="eyebrow"><span class="num">06</span> Projects</div>
 
       <div class="project-featured" data-project="rag">
         <div>
@@ -590,7 +655,7 @@
 
   <section id="education">
     <div class="wrap">
-      <div class="eyebrow"><span class="num">06</span> Education</div>
+      <div class="eyebrow"><span class="num">07</span> Education</div>
       <div class="edu-card">
         <div>
           <h3>B.S. Computer Science &mdash; Software Development Emphasis</h3>
