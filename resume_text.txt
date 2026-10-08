@@ -1,0 +1,60 @@
+SATHYAN ASOKAN GEETHPRIYA 
+✉ agsathyan26@gmail.com    ☎ (224) 475-8963    Vernon Hills, IL    LinkedIn    GitHub 
+PROFESSIONAL SUMMARY 
+Entry-level AI/ML & Data Engineer who builds production-style data pipelines and ML systems using Python, SQL, AWS, and modern AI infrastructure. 
+EXPERIENCE 
+Co-Founder & Software Engineer — InferFlow 
+InferFlow · Self-employed | Jun 2026 – Present | Chicago, IL 
+• Developed a synthetic-data pipeline with deliberately injected quality problems (nulls, duplicates, malformed values, and outliers), using Pydantic validation and 
+PostgreSQL with a rejected-records audit trail; tiered validation severity so hard rejects are separated from degradable issues. 
+• Built an Isolation Forest anomaly detector achieving 92.6% recall against held-out synthetic ground truth and a Random Forest churn classifier with ROC-AUC of 
+approximately 0.65; results are limited to synthetic data without a real behavioral decline. 
+• Built a FastAPI backend and React dashboard, containerized with Docker Compose, with 32 pytest tests and GitHub Actions CI. 
+• Created a Terraform module for a cost-optimized AWS architecture using S3, Lambda, and RDS without a NAT gateway; architecture was validated but not yet 
+deployed. 
+• Results: 95.1% of customers and 92.4% of transactions passed validation and loaded into the clean schema. 
+Freelance Software Engineer 
+Self-employed | Aug 2026 – Present | United States (Remote) 
+• Develop end-to-end software and data applications independently, focusing on backend development, AI/ML integration, data engineering, and cloud 
+technologies. 
+• Build production-style applications using Python, FastAPI, React, PostgreSQL, Docker, and AWS, implementing backend APIs, data pipelines, automated 
+testing, and CI/CD workflows. 
+• Design data validation and analytics pipelines using PostgreSQL, SQL, Pydantic, CTEs, window functions, and stored procedures to process and monitor data 
+quality. 
+Data Science Specialist 
+Inceptez | June 2025 – July 2026 | Tamil Nadu, India (Remote) 
+• Architected end-to-end Retrieval-Augmented Generation (RAG) workflows, optimizing document ingestion pipelines, semantic chunking strategies, and vector 
+database embeddings. 
+• Implemented continuous integration evaluations using Ragas and DeepEval frameworks to systematically quantify retrieval accuracy and generation quality. 
+• Deployed applications leveraging local LLMs and multi-provider APIs to automate workflows and optimize model performance bounds. 
+TECHNICAL PROJECTS 
+AI Customer Support Application 
+• Built a full production-style RAG pipeline end-to-end (ingestion → pgvector storage → retrieval → generation) with a pluggable provider architecture (OpenAI → 
+local model → offline fallback) so the app runs fully with zero API keys. 
+• Built a retrieval evaluation harness across 36 held-out queries, hitting 86.1% Hit@4 and a 0.750 Mean Reciprocal Rank even on the weakest (offline) embedding 
+tier. 
+Ghost-it — AI Writing Assistant 
+• Delivered a full-stack RAG writing assistant integrating 3 external vendor APIs (Claude, Voyage AI, LanguageTool) into a single React + FastAPI application 
+covering style analysis, grammar correction, and continuity checking. 
+• Built a retrieval evaluation harness across 28 held-out queries against a hand-labeled corpus, achieving 100% Hit@4 and a 0.976 Mean Reciprocal Rank with 
+the Voyage embedding model. 
+Housing Price Prediction Model & Customer Churn Analysis 
+• Built an end-to-end regression pipeline (Ridge/Lasso, cross-validation) for housing price prediction and packaged results into a stakeholder-ready report. 
+• Trained classification models (logistic regression, random forest, gradient boosting) and used K-Means + PCA to segment customers and surface churn-retention 
+insights. 
+EDUCATION 
+B.S. in Computer Science, Software Development — Northern Illinois University 
+Graduated Spring 2026 | DeKalb, IL 
+CORE COURSEWORK 
+• Database Systems – MariaDB, SQL    • Computer Networks – C++    • Systems Programming – C++    • Operating Systems – C++    • Computer Architecture    • Software 
+Engineering – C++, SQL    • Data Structures & Algorithms – C++    • Android App Development – Java    • iOS App Development – Swift 
+SKILLS 
+•  Programming: Python, SQL, Swift, Bash/Shell Scripting, C++/C  
+•  Cloud & DevOps: AWS (Lambda, DynamoDB, Cognito), Google Cloud Platform (GCP), Docker, CI/CD  
+•  AI & Developer Tools: RAG, LangChain, GitHub, Machine Learning, PostgreSQL, FastAPI, React, Terraform  
+CORE COMPETENCIES 
+• Workflow Optimization    • Task Prioritization    • Time Management    • Cross -functional Accountability  • Process Optimization  • Statistical Analysis  • Data Integrity 
+CERTIFICATIONS 
+• AWS Certified Solutions Architect – Associate (SAA-C03) – In progress | Expected October 2026 
+• Certification in Mobile App Development 
+---PAGE---
